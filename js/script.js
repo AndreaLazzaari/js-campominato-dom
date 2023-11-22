@@ -16,19 +16,10 @@
 // i numeri generati vanno all'interno di un array
 // i numeri dentro all'array corrispondono alla rispettiva cella
 
-/**creato un array vuoto
- * generato un numero casuale da 1 a 16
- * condizione while per generare i 16 numeri tutti diversi
- * @returns array con all'interno 16 numeri generati randomici tutti diversi
- */
-function creazioneNumeriRandom() {
-  const numeriGenerati = [];
-  let num = Math.floor(Math.random() * 16) + 1;
-  while (numeriGenerati.includes(num)) {
-    num = Math.floor(Math.random() * 16) + 1;
-  }
-  return numeriGenerati;
-}
+
+
+
+
 
 
 
@@ -62,8 +53,8 @@ buttonElement.addEventListener('click', function(){
 
 })
 
-
-
+let numeri = creazioneNumeriRandom()
+console.log(numeri)
 
 
 
@@ -79,4 +70,20 @@ function creazioneQuadrato() {
   elementoArticle.classList.add('quadrato');
   
   return elementoArticle;
+}
+
+
+/**creato un array vuoto
+ * generato un numero casuale da 1 a 16
+ * condizione while per generare i 16 numeri tutti diversi
+ * @returns array con all'interno 16 numeri generati randomici tutti diversi
+ */
+function creazioneNumeriRandom() {
+  const numeriGenerati = [];
+  let num = Math.round(Math.random(1, 100) * 16) + 1;
+  while (numeriGenerati.includes(num)) {
+    num = Math.round(Math.random(1, 100) * 16) + 1;
+    numeriGenerati.push(num)
+  }
+  return numeriGenerati;
 }
