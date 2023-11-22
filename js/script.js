@@ -50,12 +50,17 @@ buttonElement.addEventListener('click', function(){
       
     })
   }
+  
+  // finchè il giocatore non ha cliccato su tutte le celle giuste allora la partita non finisce
+  // quando la partita finisce mettere nel dom un messaggio che dice il punteggio dell'utente
+    // si può scomporrere
+
+
 
 })
 
 
-let numeri = creazioneNumeriRandom()
-console.log(numeri)
+console.log(creazioneNumeriRandom())
 
 
 
