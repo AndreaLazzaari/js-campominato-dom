@@ -56,17 +56,12 @@ buttonElement.addEventListener('click', function(){
       // celle giuste selezionate
     // alrimenti la partita finisce quando l'utente ha cliccato su tutte le celle corrette
 
-
-    // while (quadrato.classList.add('click-giusto' || 'click-sbagliato')) {
-      
-    // }
-
-      // i numeri generati nel mio array corrisopondono al numero della cella sono false
-    // numeri.includes(contenutoQuadrato) = false  
-    if (numeri.includes(contenutoQuadrato) === true) {
-      alert('la partita è finita')
-      
-    } 
+    let ancoraInGioca = true
+    while (ancoraInGioca === true) {
+      alert('sei ancora in partita')
+    } if (ancoraInGioca === false) {  // i numeri generati nel mio array corrisopondono al numero della cella sono false
+        alert('la partita è finita')
+      } 
       
     })
   }
