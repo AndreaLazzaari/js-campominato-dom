@@ -74,8 +74,8 @@ function creazioneQuadrato() {
 
 
 /**creato un array vuoto
- * generato un numero casuale da 1 a 16
- * condizione while per generare i 16 numeri tutti diversi
+ * generato un numero casuale da 1 a 100
+ * condizione while per generare 16 numeri tutti diversi
  * @returns array con all'interno 16 numeri generati randomici tutti diversi
  */
 function creazioneNumeriRandom() {
