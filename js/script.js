@@ -50,6 +50,14 @@ buttonElement.addEventListener('click', function(){
       console.log(contenutoQuadrato)
     }
 
+      // i numeri generati nel mio array corrisopondono al numero della cella sono false
+    numeri.includes(contenutoQuadrato) = false  
+    if (numeri.includes(contenutoQuadrato) === true) {
+      alert('la partita è finita')
+      
+    } else {
+      alert('complimenti hai vinto')
+  }
       
     })
   }
@@ -65,14 +73,7 @@ buttonElement.addEventListener('click', function(){
   // }
 
 
-  // i numeri generati nel mio array corrisopondono al numero della cella sono false
-  numeri.includes(contenutoQuadrato) = false  
-  if (numeri.includes(contenutoQuadrato) === true) {
-    alert('la partita è finita')
-    
-  } else {
-    alert('complimenti hai vinto')
-  }
+ 
  
 
 })
