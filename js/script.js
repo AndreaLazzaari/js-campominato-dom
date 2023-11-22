@@ -16,11 +16,13 @@
 let mainContainerElement = document.querySelector('div.main-container')
 let buttonElement = document.querySelector ('button');
 
-let numeri = creazioneNumeriRandom()
-console.log(numeri)
+
 
 buttonElement.addEventListener('click', function(){
     mainContainerElement.innerHTML = '';
+
+    let numeri = creazioneNumeriRandom()
+    console.log(numeri)
 
   for (let i = 1; i <= 100; i++) {
 
