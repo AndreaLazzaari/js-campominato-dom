@@ -39,7 +39,8 @@ buttonElement.addEventListener('click', function(){
     // if che verifica se ho cliccato su una cella che è presente nell'array
     // se la cella cliccata ha lo stesso numero di un numero presente nell'array la cella si colora di rosso
     // altrimenti la cella si colora di blu
-    if (contenutoQuadrato === creazioneNumeriRandom()) {
+    
+    if (creazioneNumeriRandom().includes(contenutoQuadrato)) {
       this.classList.add('click-sbagliato')
       console.log(contenutoQuadrato)
     } else {
@@ -60,7 +61,7 @@ buttonElement.addEventListener('click', function(){
 })
 
 
-console.log(creazioneNumeriRandom())
+// console.log(creazioneNumeriRandom())
 
 
 
