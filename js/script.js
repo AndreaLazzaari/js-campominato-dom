@@ -12,15 +12,12 @@
 // cioè il numero di volte che l’utente ha cliccato su una cella che non era una bomba.
 
 
-// creare una funzione che generi 16 numeri casuali tutti diversi
-// i numeri generati vanno all'interno di un array
-// i numeri dentro all'array corrispondono alla rispettiva cella
-
 
 let mainContainerElement = document.querySelector('div.main-container')
 let buttonElement = document.querySelector ('button');
 
-
+let numeri = creazioneNumeriRandom()
+console.log(numeri)
 
 buttonElement.addEventListener('click', function(){
     mainContainerElement.innerHTML = '';
@@ -34,13 +31,16 @@ buttonElement.addEventListener('click', function(){
   
     mainContainerElement.appendChild(quadrato);
 
+  
+    
     quadrato.addEventListener ('click', function(){
+      
       
     // if che verifica se ho cliccato su una cella che è presente nell'array
     // se la cella cliccata ha lo stesso numero di un numero presente nell'array la cella si colora di rosso
     // altrimenti la cella si colora di blu
     
-    if (creazioneNumeriRandom().includes(contenutoQuadrato)) {
+    if (numeri.includes(contenutoQuadrato)) {
       this.classList.add('click-sbagliato')
       console.log(contenutoQuadrato)
     } else {
