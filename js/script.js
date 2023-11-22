@@ -54,16 +54,26 @@ buttonElement.addEventListener('click', function(){
     })
   }
   
-  // finchè il giocatore non ha cliccato su tutte le celle giuste allora la partita non finisce
-  // quando la partita finisce mettere nel dom un messaggio che dice il punteggio dell'utente
-    // si può scomporrere
+  // finchè ad ogni cella non è stata aggiunta la classe click allora la partita non finisce
+  // se un giocatore clicca su una cella di una bomba la partita finisce e compare nel dom un messaggio con il punteggio delle
+    // celle giuste selezionate
+  // alrimenti la partita finisce quando l'utente ha cliccato su tutte le celle corrette
 
 
+
+  // i numeri generati nel mio array corrisopondono al numero della cella sono false
+  numeri.includes(contenutoQuadrato) = false  
+  while (numeri.includes(contenutoQuadrato) === false) {
+    
+  }
+ if (numeri.includes(contenutoQuadrato) === true) {
+  alert('la partita è finita')
+ } 
 
 })
 
 
-// console.log(creazioneNumeriRandom())
+
 
 
 
