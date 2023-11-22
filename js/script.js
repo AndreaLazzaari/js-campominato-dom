@@ -53,6 +53,7 @@ buttonElement.addEventListener('click', function(){
 
 })
 
+
 let numeri = creazioneNumeriRandom()
 console.log(numeri)
 
@@ -73,17 +74,23 @@ function creazioneQuadrato() {
 }
 
 
-/**creato un array vuoto
+/**creato un array 
  * generato un numero casuale da 1 a 100
  * condizione while per generare 16 numeri tutti diversi
+ * se numeri generati non sono già presenti nell'array lo aggiungo, altrimenti ne creo uno nuovo
  * @returns array con all'interno 16 numeri generati randomici tutti diversi
  */
 function creazioneNumeriRandom() {
-  const numeriGenerati = [];
-  let num = Math.floor(Math.random(1, 100) * 16) + 1;
-  while (numeriGenerati.includes(num)) {
-    num = Math.floor(Math.random(1, 100) * 16) + 1;
-    numeriGenerati.push(num)
+  const numeriGenerati = [1,22];
+
+  let num = Math.floor(Math.random() * 100) + 1;
+  
+  while (numeriGenerati.length < 16) {
+    num = Math.floor(Math.random() * 100) + 1;
+    if (!numeriGenerati.includes(num)) {
+      numeriGenerati.push(num)
+    }
+   
   }
   return numeriGenerati;
 }
