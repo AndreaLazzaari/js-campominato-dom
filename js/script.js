@@ -80,9 +80,9 @@ function creazioneQuadrato() {
  */
 function creazioneNumeriRandom() {
   const numeriGenerati = [];
-  let num = Math.round(Math.random(1, 100) * 16) + 1;
+  let num = Math.floor(Math.random(1, 100) * 16) + 1;
   while (numeriGenerati.includes(num)) {
-    num = Math.round(Math.random(1, 100) * 16) + 1;
+    num = Math.floor(Math.random(1, 100) * 16) + 1;
     numeriGenerati.push(num)
   }
   return numeriGenerati;
