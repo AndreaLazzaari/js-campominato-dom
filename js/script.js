@@ -60,15 +60,20 @@ buttonElement.addEventListener('click', function(){
   // alrimenti la partita finisce quando l'utente ha cliccato su tutte le celle corrette
 
 
+  // while (quadrato.classList.add('click-giusto' || 'click-sbagliato')) {
+    
+  // }
+
 
   // i numeri generati nel mio array corrisopondono al numero della cella sono false
   numeri.includes(contenutoQuadrato) = false  
-  while (numeri.includes(contenutoQuadrato) === false) {
+  if (numeri.includes(contenutoQuadrato) === true) {
+    alert('la partita è finita')
     
+  } else {
+    alert('complimenti hai vinto')
   }
- if (numeri.includes(contenutoQuadrato) === true) {
-  alert('la partita è finita')
- } 
+ 
 
 })
 
