@@ -50,27 +50,27 @@ buttonElement.addEventListener('click', function(){
       console.log(contenutoQuadrato)
     }
 
+    
+    // finchè ad ogni cella non è stata aggiunta la classe click allora la partita non finisce
+    // se un giocatore clicca su una cella di una bomba la partita finisce e compare nel dom un messaggio con il punteggio delle
+      // celle giuste selezionate
+    // alrimenti la partita finisce quando l'utente ha cliccato su tutte le celle corrette
+
+
+    // while (quadrato.classList.add('click-giusto' || 'click-sbagliato')) {
+      
+    // }
+
       // i numeri generati nel mio array corrisopondono al numero della cella sono false
-    numeri.includes(contenutoQuadrato) = false  
+    // numeri.includes(contenutoQuadrato) = false  
     if (numeri.includes(contenutoQuadrato) === true) {
       alert('la partita è finita')
       
-    } else {
-      alert('complimenti hai vinto')
-  }
+    } 
       
     })
   }
   
-  // finchè ad ogni cella non è stata aggiunta la classe click allora la partita non finisce
-  // se un giocatore clicca su una cella di una bomba la partita finisce e compare nel dom un messaggio con il punteggio delle
-    // celle giuste selezionate
-  // alrimenti la partita finisce quando l'utente ha cliccato su tutte le celle corrette
-
-
-  // while (quadrato.classList.add('click-giusto' || 'click-sbagliato')) {
-    
-  // }
 
 
  
