@@ -17,16 +17,6 @@
 // i numeri dentro all'array corrispondono alla rispettiva cella
 
 
-
-
-
-
-
-
-
-
-
-
 let mainContainerElement = document.querySelector('div.main-container')
 let buttonElement = document.querySelector ('button');
 
@@ -39,14 +29,19 @@ buttonElement.addEventListener('click', function(){
 
 
     let quadrato = creazioneQuadrato();
-    const contenutoQuadrato = i;
+    let contenutoQuadrato = i;
     quadrato.innerHTML += `<span> ${contenutoQuadrato} </span`;
   
     mainContainerElement.appendChild(quadrato);
-  
 
     quadrato.addEventListener ('click', function(){
-      this.classList.toggle('cliccato')
+      
+    // if che verifica se ho cliccato su una cella che è presente nell'array
+    // se la cella cliccata ha lo stesso numero di un numero presente nell'array la cella si colora di rosso
+    // altrimenti la cella si colora di blu
+
+
+      this.classList.add('cliccato')
       console.log(contenutoQuadrato)
     })
   }
@@ -81,7 +76,7 @@ function creazioneQuadrato() {
  * @returns array con all'interno 16 numeri generati randomici tutti diversi
  */
 function creazioneNumeriRandom() {
-  const numeriGenerati = [1,22];
+  const numeriGenerati = [22];
 
   let num = Math.floor(Math.random() * 100) + 1;
   
